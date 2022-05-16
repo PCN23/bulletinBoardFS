@@ -2,3 +2,4 @@ const SUPABASE_URL = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 const SUPABASE_KEY = 'https://rtlscqxivjinblfrlgls.supabase.co';
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
