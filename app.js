@@ -1,4 +1,16 @@
 // import functions and grab DOM elements
+import { fetchPosts } from './fetch-utils.js';
+
+
+
+
+
+
+
+
+
+
+
 
 // let state
 
