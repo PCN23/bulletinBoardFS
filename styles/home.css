@@ -1,1 +1,22 @@
 /* add home page styles here */
+
+.gutter-right {
+    width: 180px;
+    height: 80px;
+    text-align: left;
+    border: 5px solid red;
+    flex-direction: column;
+}
+
+#auth-button {
+    background-color: aqua;
+}
+
+#create {
+    background-color: aqua;
+
+}
+
+.soccer {
+    border: 10px solid red;
+}
