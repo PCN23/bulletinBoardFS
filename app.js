@@ -11,7 +11,6 @@ import { fetchPosts } from './fetch-utils.js';
 
 
 
-
 // let state
 
 // set event listeners 
