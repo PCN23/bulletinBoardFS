@@ -1,16 +1,25 @@
 // import functions and grab DOM elements
 
-import { fetchPosts } from './fetch-utils.js';
+import { checkAuth, fetchPosts } from './fetch-utils.js';
 
 const postsElem = document.getElementById('posts');
+//checkAuth();
+
+const logoutBtn = document.getElementById('logout');
+logoutBtn.addEventListener('click', () => {
+    window.location.href = '/';
+});
+
+
 const authButton = document.getElementById('auth-button');
-const createBtn = document.getElementById('create');
-
-
+authButton.addEventListener('click', () => {
+    window.location.href = '/auth-page';
+});
 
 
 async function onLoad() {
     const posts = await fetchPosts();
+    console.log(posts);
     for (let post of posts) {
         const div = document.createElement('div');
         const p = document.createElement('p');

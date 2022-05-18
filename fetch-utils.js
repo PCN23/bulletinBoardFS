@@ -6,6 +6,7 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function fetchPosts(){
     const response = await client.from('bulletin_board').select('*');
+    console.log(response.data);
     return response.data;
 }
 
@@ -24,16 +25,20 @@ export async function redirectIfLoggedIn() {
     }
 }
 
-export async function signInUser(email, password ) {
+export async function signUpUser(email, password) {
+    const response = await client.auth.signUp({ email, password });
+    return response.user;
+}
+
+export async function signInUser(email, password) {
     const response = await client.auth.signIn({ email, password });
     return response.user;
 }
 
 
-
-export async function getPosts() {
-    const resp = await client.from('bulletin_board').select('*');
-    return 
+export async function createPosts(post) {
+    const resp = await client.from('posts').insert(post);
+    return resp.error;
 }
 
 export async function logout() {
