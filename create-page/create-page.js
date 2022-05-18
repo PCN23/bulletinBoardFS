@@ -1,6 +1,6 @@
 import { checkAuth, logout, createPosts } from '../fetch-utils.js';
 
-//checkAuth();
+checkAuth();
 
 const postItForm = document.getElementById('post-it-form');
 postItForm.addEventListener('submit', async (e) => {

@@ -18,7 +18,7 @@ authButton.addEventListener('click', () => {
 
 const createPostBtn = document.getElementById('create');
 createPostBtn.addEventListener('click', () => {
-    window.location.href = '/auth-page';
+    window.location.href = '/create-page';
 });
 
 
