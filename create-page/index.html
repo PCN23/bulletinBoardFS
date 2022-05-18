@@ -9,11 +9,34 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Enter Info</h1>
-    <h2 id="name"></h2>
+    <header>
+    <h1>Make a post</h1>
+    <div id="nav" class="right">
     <button id="logout">Log out</button>
-    <a href="/"></a>
-    <script src="./create-page.js" type="module"></script>
+    <button id="home">Home</button>
+    </div>
+    </header>
+
+    <form id="post-it-form">
+        <label for="name">
+            <div>Player name</div>
+            <input type="text" name="name" id="name" />
+        </label>
+
+        <label for="position">
+            <div>Player position</div>
+            <input type="text" name="position" id="position" />
+        </label>
+
+        <label for="country">
+            <div>Players origins</div>
+            <input type="text" name="country" id="country" />
+        </label>
+        <button>Save</button>
+
+    </form>
+
+    <script src="./index.html" type="module"></script>
     
 </body>
 </html>
