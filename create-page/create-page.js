@@ -1,11 +1,18 @@
-import { checkAuth, logout } from '../fetch-utils.js';
+import { checkAuth, logout, createPosts } from '../fetch-utils.js';
 
-checkAuth();
+//checkAuth();
 
 const postItForm = document.getElementById('post-it-form');
 postItForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+    const data = new FormData(postItForm);
     
+    await createPosts({
+        name: data.get('name'),
+        position: data.get('position'),
+        country: data.get('country'),
+    });
+    location.replace('/');
 });
 
 const logoutButton = document.getElementById('logout');
@@ -17,6 +24,7 @@ const home = document.getElementById('home');
 home.addEventListener('click', () => {
     location.replace('/');
 });
+
 
 
 

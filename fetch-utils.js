@@ -21,7 +21,7 @@ export async function checkAuth() {
 
 export async function redirectIfLoggedIn() {
     if (getUser()) {
-        location.replace('./');
+        location.replace('/');
     }
 }
 
@@ -37,8 +37,9 @@ export async function signInUser(email, password) {
 
 
 export async function createPosts(post) {
-    const resp = await client.from('posts').insert(post);
-    return resp.error;
+    const resp = await client.from('bulletin_board').insert(post);
+    console.log(resp);
+    return resp.data;
 }
 
 export async function logout() {
