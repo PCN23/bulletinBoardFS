@@ -20,3 +20,22 @@
 .soccer {
     border: 10px solid red;
 }
+
+#posts {
+    border: 6px solid red;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
+#h2 {
+    border: 6px solid black;
+}
+
+.left {
+    border: 10px solid black;
+}

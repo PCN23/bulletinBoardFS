@@ -11,6 +11,7 @@ postItForm.addEventListener('submit', async (e) => {
         name: data.get('name'),
         position: data.get('position'),
         country: data.get('country'),
+        info: data.get('info'),
     });
     location.replace('/');
 });

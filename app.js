@@ -32,8 +32,8 @@ async function onLoad() {
         const p1 = document.createElement('p1');
         h2.textContent = post.name;
         p.textContent = post.position;
-        p1.textContent = post.number;
-        div.append(h2, p);
+        p1.textContent = post.info;
+        div.append(h2, p, p1);
         postsElem.append(div);
     }
 }
