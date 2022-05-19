@@ -2,18 +2,36 @@
 
 .gutter-right {
     width: 180px;
-    height: 80px;
-    text-align: left;
+    height: 110px;
+    text-align: middle;
     border: 5px solid red;
-    flex-direction: column;
+    background-color: black;
+
 }
 
 #auth-button {
     background-color: aqua;
+    border: none;
+    color: black;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+
 }
 
 #create {
     background-color: aqua;
+    border: none;
+    color: black;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
 
 }
 
