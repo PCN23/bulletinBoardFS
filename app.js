@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 
-import { checkAuth, fetchPosts } from './fetch-utils.js';
+import { fetchPosts } from './fetch-utils.js';
 
 const postsElem = document.getElementById('posts');
 //checkAuth();
