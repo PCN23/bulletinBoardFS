@@ -1,0 +1,16 @@
+#button-5 {
+    background-color: aqua;
+    border: none;
+    color: black;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 20px;
+
+}
+
+#auth-main { 
+    border: 10px solid red;
+}

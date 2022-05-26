@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link rel="stylesheet" href="./styles/home.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <h1>Make a post</h1>
+    <div id="nav" class="right">
+    <button id="logout">Log out</button>
+    <button id="home">Home</button>
+    </div>
+    </header>
+
+    <form id="post-it-form">
+        <label for="name">
+            <div>Player name</div>
+            <input type="text" name="name" id="name" />
+        </label>
+
+        <label for="position">
+            <div>Player position</div>
+            <input type="text" name="position" id="position" />
+        </label>
+
+        <label for="country">
+            <div>Players origins</div>
+            <input type="text" name="country" id="country" />
+        </label>
+
+        <label for="info">
+            <div>Player info</div>
+            <input type="text" name="info" id="info" />
+        </label>
+
+
+        <button type="submit" id="save-post">Save</button>
+
+    </form>
+
+    <script src="./create-page.js" type="module"></script>
+    
+</body>
+</html>

@@ -1,1 +1,60 @@
 /* add home page styles here */
+
+.gutter-right {
+    width: 180px;
+    height: 110px;
+    text-align: middle;
+    border: 5px solid red;
+    background-color: black;
+
+}
+
+#auth-button {
+    background-color: aqua;
+    border: none;
+    color: black;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+
+}
+
+#create {
+    background-color: aqua;
+    border: none;
+    color: black;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+
+}
+
+.soccer {
+    border: 10px solid red;
+}
+
+#posts {
+    border: 6px solid red;
+    width: 700px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
+#h2 {
+    border: 6px solid black;
+}
+
+.left {
+    border: 10px solid black;
+}
